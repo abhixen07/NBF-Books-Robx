@@ -30,44 +30,47 @@ class _SplashScreenState extends State<SplashScreen> {
         decoration: BoxDecoration(
           gradient: linearGradientBackground,
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: ListView(
           children: [
             SizedBox(height: screenHeight * 0.1),
 
-            /// Logo at top center
+
             Center(
               child: Image.asset(
                 'assets/images/app_logo.png',
-                width: screenWidth * 0.35,
+                width: screenWidth * 0.3,
+              ),
+            ),
+            /// Text under logo, left-aligned
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.13),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: screenHeight * 0.02),
+                  Text(
+                    'National Book Foundation',
+                    style: TextStyle(
+                      fontSize: screenWidth * 0.05,
+                      fontWeight: FontWeight.w600,
+                      color: whiteColor,
+                      fontFamily: 'Inter',
+                    ),
+                  ),
+                  SizedBox(height: screenHeight * 0.005),
+                  Text(
+                    'Ministry of Federal Education & Professional Training\nGovernment Of Pakistan',
+                    style: TextStyle(
+                      fontSize: screenWidth * 0.035,
+                      color: whiteColor,
+                      fontStyle: FontStyle.italic,
+                      fontFamily: 'Inter',
+                    ),
+                  ),
+                ],
               ),
             ),
 
-            /// Middle Text
-            Column(
-              children: [
-                Text(
-                  'National Book Foundation',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: screenWidth * 0.05,
-                    fontWeight: FontWeight.bold,
-                    color: whiteColor,
-                    fontFamily: 'Inter',
-                  ),
-                ),
-                SizedBox(height: screenHeight * 0.005),
-                Text(
-                  'Ministry of Federal Education & Professional Training\nGovernment Of Pakistan',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: screenWidth * 0.035,
-                    color: whiteColor,
-                    fontFamily: 'Inter',
-                  ),
-                ),
-              ],
-            ),
 
             /// Bottom Image of Books
             Padding(

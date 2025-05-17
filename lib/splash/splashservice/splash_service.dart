@@ -7,7 +7,7 @@ import '../../routes/app_routes.dart';
 class SplashService {
   /// Start the timer and navigate based on onboarding status
   void startTimer(BuildContext context) {
-    Timer(const Duration(seconds: 100), () async {
+    Timer(const Duration(seconds: 1000), () async {
       if (context.mounted) {
         await navigateToPage(context);
       }
