@@ -11,14 +11,11 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
-
   @override
   void initState() {
     super.initState();
     SplashService().startTimer(context);
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -27,31 +24,33 @@ class _SplashScreenState extends State<SplashScreen> {
 
     return Scaffold(
       body: Container(
+        width: screenWidth,
+        height: screenHeight,
         decoration: BoxDecoration(
           gradient: linearGradientBackground,
         ),
-        child: ListView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(height: screenHeight * 0.1),
+            SizedBox(height: screenHeight * 0.05),
 
+            /// Logo
 
-            Center(
-              child: Image.asset(
-                'assets/images/app_logo.png',
-                width: screenWidth * 0.3,
-              ),
-            ),
-            /// Text under logo, left-aligned
+            /// Text under logo, aligned left but centered block
             Padding(
               padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.13),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Image.asset(
+                    'assets/images/app_logo.png',
+                    width: screenWidth * 0.3,
+                  ),
                   SizedBox(height: screenHeight * 0.02),
                   Text(
                     'National Book Foundation',
                     style: TextStyle(
-                      fontSize: screenWidth * 0.05,
+                      fontSize: screenWidth * 0.055,
                       fontWeight: FontWeight.w600,
                       color: whiteColor,
                       fontFamily: 'Inter',
@@ -61,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   Text(
                     'Ministry of Federal Education & Professional Training\nGovernment Of Pakistan',
                     style: TextStyle(
-                      fontSize: screenWidth * 0.035,
+                      fontSize: screenWidth * 0.027,
                       color: whiteColor,
                       fontStyle: FontStyle.italic,
                       fontFamily: 'Inter',
@@ -71,13 +70,12 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
 
-
-            /// Bottom Image of Books
+            /// Book Image at bottom
             Padding(
-              padding: EdgeInsets.only(bottom: screenHeight * 0.05),
+              padding: EdgeInsets.only(bottom: screenHeight * 0.06),
               child: Image.asset(
-                'assets/images/books_splash.png', // replace with your correct asset path
-                width: screenWidth * 0.6,
+                'assets/images/books_splash.png',
+                width: screenWidth * 0.8,
               ),
             ),
           ],

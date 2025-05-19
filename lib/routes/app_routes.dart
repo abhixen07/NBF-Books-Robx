@@ -1,6 +1,9 @@
 import 'package:go_router/go_router.dart';
 import 'package:nbf_bookpublications_app/home.dart';
+import 'package:nbf_bookpublications_app/splash/splashscreen/onboarding_page.dart';
 import '../../splash/splashscreen/splash_screen.dart';
+import '../Auth/pages/login_page.dart';
+import '../Auth/pages/signup_page.dart';
 
 final class AppRoutes {
   AppRoutes._();
@@ -22,11 +25,11 @@ final class AppRoutes {
       name: NamedRoutes.splashPage.name,
       builder: (context, state) => const SplashScreen(),
     ),
-    // GoRoute(
-    //   path: onBoardPage,
-    //   name: NamedRoutes.onBoardPage.name,
-    //   builder: (context, state) => OnboardingPage(),
-    // ),
+    GoRoute(
+      path: onBoardPage,
+      name: NamedRoutes.onBoardPage.name,
+      builder: (context, state) => OnBoardingPage(),
+    ),
 
     GoRoute( //temp
       path: homeScreen,
@@ -37,17 +40,17 @@ final class AppRoutes {
 
 
 
-    // GoRoute(
-    //   path: loginpage,
-    //   name: NamedRoutes.loginpage.name,
-    //   builder: (context, state) => const LoginPage(),
-    // ),
-    //
-    // GoRoute(
-    //   path: signuppage,
-    //   name: NamedRoutes.signuppage.name,
-    //   builder: (context, state) => const SignUpPage(),
-    // ),
+    GoRoute(
+      path: loginpage,
+      name: NamedRoutes.loginpage.name,
+      builder: (context, state) => const LoginPage(),
+    ),
+
+    GoRoute(
+      path: signuppage,
+      name: NamedRoutes.signuppage.name,
+      builder: (context, state) => const SignUpPage(),
+    ),
 
 
 
@@ -60,7 +63,7 @@ enum NamedRoutes {
   onBoardPage,
   loginpage,
   signuppage,
-  homeScreen, //temp
+  homeScreen,
 
 
 }

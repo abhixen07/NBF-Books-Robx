@@ -4,6 +4,7 @@ const whiteColor =  Colors.white;
 const whiteColor2 =  Color(0XFFFFFF88);
 const blackColor = Colors.black;
 const btnColor = Color(0XFFD67E39);
+const btn2Color = Color(0XFF008591);
 const greyColor = Colors.grey;
 const redColor = Colors.red;
 const red2Color = Color(0XFFFF0D0D);
@@ -16,6 +17,8 @@ const customFontCommentColor = Color(0xFF788EA2);
 const textFieldColor = Color(0xFF400C74);
 const greenOnline = Color(0xFF43EE7D);
 const customGreyColor = Color(0XFFF7F7F7);
+const lightGreyColor = Color(0xFFD9D9D9);
+
 
 
 

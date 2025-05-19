@@ -28,24 +28,24 @@ class MyApp extends StatelessWidget {
 
           textButtonTheme: TextButtonThemeData(
             style: ButtonStyle().copyWith(
-              backgroundColor: const WidgetStatePropertyAll(btnColor),
+              backgroundColor: const WidgetStatePropertyAll(btn2Color),
               foregroundColor: const WidgetStatePropertyAll(whiteColor),
 
 
               textStyle: const WidgetStatePropertyAll(
                 TextStyle(
                   fontFamily: 'Inter',
-                  fontWeight: FontWeight.w700,
-                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
                 ),
               ),
 
               ///for size on screen
               minimumSize: const WidgetStatePropertyAll(
-                  Size(70, 30)),
+                  Size(double.infinity, 48)),
               shape: WidgetStateProperty.all(
                 RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
             ),

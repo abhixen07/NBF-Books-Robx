@@ -7,7 +7,7 @@ import '../../routes/app_routes.dart';
 class SplashService {
   /// Start the timer and navigate based on onboarding status
   void startTimer(BuildContext context) {
-    Timer(const Duration(seconds: 1000), () async {
+    Timer(const Duration(seconds: 5), () async {
       if (context.mounted) {
         await navigateToPage(context);
       }
@@ -19,19 +19,19 @@ class SplashService {
      final prefs = await SharedPreferences.getInstance();
      final isOnboardingSeen = prefs.getBool('isOnboardingSeen') ?? false;
 
-     if (isOnboardingSeen) {
+     // if (isOnboardingSeen) {
 
       ///Flow
       // GoRouter.of(context).pushNamed(NamedRoutes.loginpage.name);
 
-       context.goNamed(NamedRoutes.homeScreen.name);
+       context.goNamed(NamedRoutes.onBoardPage.name);
 
-    } else {
+    // } else {
 
-       context.goNamed(NamedRoutes.homeScreen.name);
+       // context.goNamed(NamedRoutes.homeScreen.name);
 
 
-       await prefs.setBool('isOnboardingSeen', true);
-     }
+       // await prefs.setBool('isOnboardingSeen', true);
+     // }
   }
 }

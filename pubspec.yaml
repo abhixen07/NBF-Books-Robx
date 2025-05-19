@@ -49,8 +49,9 @@ dev_dependencies:
   http:
   change_app_package_name:
   shared_preferences:
-  get: ^4.6.5
+  get: 4.7.2
   go_router:
+  flutter_svg:
 
 
 
