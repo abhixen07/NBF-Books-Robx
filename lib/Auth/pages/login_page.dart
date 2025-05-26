@@ -92,7 +92,9 @@ class _LoginPageState extends State<LoginPage> {
                           onChanged: (value) {},
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            GoRouter.of(context).pushNamed(NamedRoutes.forgetpasswordpage.name);
+                          },
                           child: const Text(
                             'Forgot Password ?',
                             style: TextStyle(
@@ -105,7 +107,9 @@ class _LoginPageState extends State<LoginPage> {
                       ],
                     ),
                     const SizedBox(height: 24),
-                    TextButton(onPressed: (){}, child:  const Text(
+                    TextButton(onPressed: (){
+                      context.goNamed(NamedRoutes.navbarpage.name);
+                    }, child:  const Text(
                       'Log In',
                     ),),
 

@@ -22,9 +22,9 @@ class SplashService {
      // if (isOnboardingSeen) {
 
       ///Flow
-      // GoRouter.of(context).pushNamed(NamedRoutes.loginpage.name);
+      GoRouter.of(context).pushNamed(NamedRoutes.loginpage.name);
 
-       context.goNamed(NamedRoutes.onBoardPage.name);
+       // context.goNamed(NamedRoutes.onBoardPage.name);
 
     // } else {
 

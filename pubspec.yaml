@@ -52,6 +52,11 @@ dev_dependencies:
   get: 4.7.2
   go_router:
   flutter_svg:
+  gap:
+  flutter_pdfview:
+  no_screenshot:
+  path_provider:
+  pin_code_fields:
 
 
 
@@ -71,6 +76,7 @@ flutter:
     - assets/images/
     - assets/svgs/
     - assets/fonts/
+    - assets/pdf/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

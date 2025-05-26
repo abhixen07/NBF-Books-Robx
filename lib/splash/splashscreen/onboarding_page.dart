@@ -41,7 +41,9 @@ class OnBoardingPage extends StatelessWidget {
                   backgroundColor: const WidgetStatePropertyAll(btnColor),
                 ),
                 onPressed: () {
-                  context.goNamed(NamedRoutes.loginpage.name);
+                  // context.goNamed(NamedRoutes.loginpage.name);
+                  context.goNamed(NamedRoutes.navbarpage.name);
+
                 },
                 child: const Text(
                   'Get Started',

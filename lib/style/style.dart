@@ -14,10 +14,12 @@ const purpleColor = Color(0XFF9483D2);
 const customTextFieldColor = Color(0XFFf0f4f4);
 const customCardColor = Color(0xFFE8E8E8);
 const customFontCommentColor = Color(0xFF788EA2);
-const textFieldColor = Color(0xFF400C74);
+const customBlue = Color(0xFF2162A1);
 const greenOnline = Color(0xFF43EE7D);
 const customGreyColor = Color(0XFFF7F7F7);
 const lightGreyColor = Color(0xFFD9D9D9);
+const iconGreyColor = Color(0xFFD5DBDB);
+const iconBlueColor = Color(0xFF2E2E5D);
 
 
 

@@ -26,8 +26,28 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           appBarTheme: const AppBarTheme(surfaceTintColor: Colors.transparent),
 
+          outlinedButtonTheme: OutlinedButtonThemeData(
+            style: const ButtonStyle().copyWith(
+              foregroundColor: const WidgetStatePropertyAll(blackColor),
+              textStyle: const WidgetStatePropertyAll(
+                TextStyle(
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                ),
+              ),
+              minimumSize:
+              const WidgetStatePropertyAll(Size(double.infinity, 47)),
+              side: const WidgetStatePropertyAll(BorderSide(color: btn2Color)),
+              shape: WidgetStatePropertyAll(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+          ),
           textButtonTheme: TextButtonThemeData(
-            style: ButtonStyle().copyWith(
+            style: const ButtonStyle().copyWith(
               backgroundColor: const WidgetStatePropertyAll(btn2Color),
               foregroundColor: const WidgetStatePropertyAll(whiteColor),
 
