@@ -193,12 +193,12 @@ class _BookDetailPageState extends State<BookDetailPage> {
                     'Play Audio',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: screenWidth * 0.035,
+                      fontSize: screenWidth * 0.03,
                     ),
                   ),
                 ),
               ),
-              SizedBox(width: screenWidth * 0.06),
+              SizedBox(width: screenWidth * 0.05),
               Expanded(
                 child: OutlinedButton.icon(
                   onPressed: () async {
@@ -215,7 +215,7 @@ class _BookDetailPageState extends State<BookDetailPage> {
                     'Read Book',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: screenWidth * 0.035,
+                      fontSize: screenWidth * 0.03,
                       color: btn2Color,
                     ),
                   ),

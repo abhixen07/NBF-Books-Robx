@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nbf_bookpublications_app/style/style.dart';
+import 'package:go_router/go_router.dart';
+
+import '../routes/app_routes.dart';
 
 class PaymentSuccessPage extends StatelessWidget {
   const PaymentSuccessPage({super.key});
@@ -65,9 +68,13 @@ class PaymentSuccessPage extends StatelessWidget {
           ),
           const SizedBox(height: 12),
 
-          // Back to Home Button (Outlined)
+          /// Back to Home Button (Outlined)
           OutlinedButton(
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).pushNamed(NamedRoutes.navbarpage.name,queryParameters: {
+                'index':'0',
+              });
+            },
 
             child: const Text(
               'Back to Home',
